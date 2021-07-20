@@ -4,9 +4,16 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
+// import 'bootstrap/js/src/collapse'  
+// import 'bootstrap/js/src/dropdown'  
+// import 'bootstrap/js/src/scrollspy' 
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+import 'popper.js'
+import 'bootstrap'
+
+ 
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
