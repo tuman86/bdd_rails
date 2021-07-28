@@ -12,8 +12,8 @@ RSpec.describe "Articles", type: :request do
       before { get "/articles/#{@article.id}/edit" }
       it "redirects to the signin page" do 
         expect(response.status).to eq 302
-        # flash_message = "You need to sign in or sign up before continuing"
-        # expect(flash[:alert]).to eq flash_message
+        flash_message = "You need to sign in or sign up before continuing."
+        expect(flash[:alert]).to eq flash_message
       end 
     end
 
